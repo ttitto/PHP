@@ -2,12 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Boolean Variable</title>
+    <title>Type Casting</title>
 </head>
 <body>
 <?php
-$isFemale=true;
-echo "<p>$isFemale</p>";
+$float = 3.14;
+$int = (integer)$float;
+echo $int;
 ?>
 </body>
 </html>
