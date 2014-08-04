@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26e6ecf7-12da-4c6d-8ea9-c4f6c1a7ab3c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TASKS.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes" />
-      <change type="NEW" beforePath="" afterPath="E:\ttittoIT\GitHub\PHP\trunk\Softuni\FastTrack\PHPIntroHW\~$TASKS.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/PHPIntroHW.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task01PrintCurrentDate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task02VariablesType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task03RectangleArea.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" readonly="true" id="26e6ecf7-12da-4c6d-8ea9-c4f6c1a7ab3c" name="Default" comment="task 4 started">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task04TriangleArea.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PHPIntroHW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +25,17 @@
     <favorites_list name="PHPIntroHW" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Task04TriangleArea.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Task04TriangleArea.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="4" selection-start="95" selection-end="95" vertical-scroll-proportion="0.1775457" vertical-offset="0" max-vertical-offset="383">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -53,14 +48,20 @@
         <option value="$PROJECT_DIR$/Task01PrintCurrentDate.php" />
         <option value="$PROJECT_DIR$/Task02VariablesType.php" />
         <option value="$PROJECT_DIR$/Task03RectangleArea.php" />
+        <option value="$PROJECT_DIR$/Task04TriangleArea.php" />
       </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <option name="servers">
+      <server host="localhost" name="xDebug" />
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP from XAMP" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1296" />
     <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -113,7 +114,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="settings.nodejs" />
+    <property name="options.lastSelected" value="Configurable.PHP" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -121,62 +122,78 @@
     <property name="recentsLimit" value="5" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="PHP Script.Task03RectangleArea.php">
-    <configuration default="false" name="Task01PrintCurrentDate.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task01PrintCurrentDate.php">
-      <RunnerSettings RunnerId="PhpRunner" />
-      <ConfigurationWrapper RunnerId="PhpRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Task02VariablesType.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/PHPIntroHW/Task02VariablesType.php">
-      <method />
-    </configuration>
-    <configuration default="false" name="Task02VariablesType.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task02VariablesType.php">
-      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="PHP Script.PHP from XAMPP">
     <configuration default="false" name="Task03RectangleArea.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/PHPIntroHW/Task03RectangleArea.php">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="Task04TriangleArea.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/PHPIntroHW/Task04TriangleArea.php">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Task01PrintCurrentDate.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task01PrintCurrentDate.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="false" actionId="Tool_PHP_PHP from xampp" />
+      </method>
+    </configuration>
+    <configuration default="false" name="Task02VariablesType.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task02VariablesType.php">
+      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="false" actionId="Tool_PHP_PHP from xampp" />
+      </method>
+    </configuration>
     <configuration default="false" name="Task03RectangleArea.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task03RectangleArea.php">
       <RunnerSettings RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
-      <method />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="false" actionId="Tool_PHP_PHP from xampp" />
+      </method>
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_PHP_PHP from xampp" />
+      </method>
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="PHP Script.Task01PrintCurrentDate.php" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task02VariablesType.php" />
-      <item index="2" class="java.lang.String" itemvalue="PHP Script.Task02VariablesType.php" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task03RectangleArea.php" />
-      <item index="4" class="java.lang.String" itemvalue="PHP Script.Task03RectangleArea.php" />
+    <configuration default="false" name="PHP from XAMPP" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="C:/xampp/php/php.exe">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="false" actionId="Tool_PHP_PHP from xampp" />
+      </method>
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task03RectangleArea.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task04TriangleArea.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.PHP from XAMPP" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Script.Task01PrintCurrentDate.php" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.Task02VariablesType.php" />
+      <item index="5" class="java.lang.String" itemvalue="PHP Script.Task03RectangleArea.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.Task03RectangleArea.php" />
-        <item index="1" class="java.lang.String" itemvalue="PHP Script.Task01PrintCurrentDate.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Task03RectangleArea.php" />
-        <item index="3" class="java.lang.String" itemvalue="PHP Script.Task02VariablesType.php" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Task02VariablesType.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task04TriangleArea.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.Task03RectangleArea.php" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.Task01PrintCurrentDate.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task03RectangleArea.php" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.Task02VariablesType.php" />
       </list>
     </recent_temporary>
   </component>
@@ -198,6 +215,25 @@
     <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">C:\Users\ttitto\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\ttittoIT\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
+          <option name="myCopyRoot" value="E:\ttittoIT\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\ttittoIT\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
+          <option name="myCopyRoot" value="E:\ttittoIT\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -208,29 +244,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="754" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32888147" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4006678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -246,7 +282,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="tasks 1-3 solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="tasks 1-3 solved" />
+    <MESSAGE value="task 4 started" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 4 started" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -254,21 +291,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Task01PrintCurrentDate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.09714286" vertical-offset="0" max-vertical-offset="350">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.09714286" vertical-offset="0" max-vertical-offset="350" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task02VariablesType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="254" selection-end="254" vertical-scroll-proportion="0.5537459" vertical-offset="51" max-vertical-offset="408">
-          <folding />
-        </state>
+        <state line="13" column="28" selection-start="254" selection-end="254" vertical-scroll-proportion="0.5537459" vertical-offset="51" max-vertical-offset="408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task03RectangleArea.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="121" selection-end="121" vertical-scroll-proportion="0.38857144" vertical-offset="0" max-vertical-offset="350">
+        <state line="8" column="13" selection-start="121" selection-end="121" vertical-scroll-proportion="0.38857144" vertical-offset="0" max-vertical-offset="350" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="9" selection-start="500" selection-end="500" vertical-scroll-proportion="0.34731543" vertical-offset="99" max-vertical-offset="17340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task04TriangleArea.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="95" selection-end="95" vertical-scroll-proportion="0.1775457" vertical-offset="0" max-vertical-offset="383">
           <folding />
         </state>
       </provider>
