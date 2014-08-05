@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="26e6ecf7-12da-4c6d-8ea9-c4f6c1a7ab3c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task07TypeCasting.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task08PrintHtml.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task09DivideBy2and9.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task10ThirdDigit7.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task11NumbersToN.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Task12Fibonacci.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Task05BooleanVariable.php" afterPath="$PROJECT_DIR$/Task05BooleanVariable.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PHPIntroHW.iws" />
@@ -31,17 +24,7 @@
     <favorites_list name="PHPIntroHW" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Task12Fibonacci.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Task12Fibonacci.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="21" selection-start="84" selection-end="84" vertical-scroll-proportion="0.19428572" vertical-offset="0" max-vertical-offset="425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -55,14 +38,6 @@
         <option value="$PROJECT_DIR$/Task02VariablesType.php" />
         <option value="$PROJECT_DIR$/Task03RectangleArea.php" />
         <option value="$PROJECT_DIR$/Task04TriangleArea.php" />
-        <option value="$PROJECT_DIR$/Task06QuotesInString.php" />
-        <option value="$PROJECT_DIR$/Task05BooleanVariable.php" />
-        <option value="$PROJECT_DIR$/Task07TypeCasting.php" />
-        <option value="$PROJECT_DIR$/Task08PrintHtml.php" />
-        <option value="$PROJECT_DIR$/Task09DivideBy2and9.php" />
-        <option value="$PROJECT_DIR$/Task10ThirdDigit7.php" />
-        <option value="$PROJECT_DIR$/Task11NumbersToN.php" />
-        <option value="$PROJECT_DIR$/Task12Fibonacci.php" />
       </list>
     </option>
   </component>
@@ -75,7 +50,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1296" />
     <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -134,79 +109,80 @@
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="LayoutCode.rearrangeEntriesPHP" value="true" />
+    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Task04TriangleArea.php" />
+    <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
     <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="PHP Script.Task12Fibonacci.php">
-    <configuration default="false" name="Task09DivideBy2and9.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task09DivideBy2and9.php">
-      <RunnerSettings RunnerId="PhpRunner" />
-      <ConfigurationWrapper RunnerId="PhpRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Task10ThirdDigit7.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task10ThirdDigit7.php">
-      <RunnerSettings RunnerId="PhpRunner" />
-      <ConfigurationWrapper RunnerId="PhpRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Task11NumbersToN.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task11NumbersToN.php">
-      <RunnerSettings RunnerId="PhpRunner" />
-      <ConfigurationWrapper RunnerId="PhpRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Task12Fibonacci.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task12Fibonacci.php">
-      <RunnerSettings RunnerId="PhpRunner" />
-      <ConfigurationWrapper RunnerId="PhpRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Task12Fibonacci.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/PHPIntroHW/Task12Fibonacci.php">
+  <component name="RunManager" selected="PHP Script.PHP from XAMPP">
+    <configuration default="false" name="Task03RectangleArea.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/PHPIntroHW/Task03RectangleArea.php">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
+    </configuration>
+    <configuration default="false" name="Task04TriangleArea.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/PHPIntroHW/Task04TriangleArea.php">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Task01PrintCurrentDate.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task01PrintCurrentDate.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="false" actionId="Tool_PHP_PHP from xampp" />
+      </method>
+    </configuration>
+    <configuration default="false" name="Task02VariablesType.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task02VariablesType.php">
+      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="false" actionId="Tool_PHP_PHP from xampp" />
+      </method>
+    </configuration>
+    <configuration default="false" name="Task03RectangleArea.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task03RectangleArea.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="false" actionId="Tool_PHP_PHP from xampp" />
+      </method>
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_PHP_PHP from xampp" />
+      </method>
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <configuration default="false" name="PHP from XAMPP" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/Task05BooleanVariable">
+    <configuration default="false" name="PHP from XAMPP" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="C:/xampp/php/php.exe">
       <RunnerSettings RunnerId="PhpRunner" />
-      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
-      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
-      <method />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="false" actionId="Tool_PHP_PHP from xampp" />
+      </method>
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="PHP Script.PHP from XAMPP" />
-      <item index="1" class="java.lang.String" itemvalue="PHP Script.Task09DivideBy2and9.php" />
-      <item index="2" class="java.lang.String" itemvalue="PHP Script.Task10ThirdDigit7.php" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Script.Task11NumbersToN.php" />
-      <item index="4" class="java.lang.String" itemvalue="PHP Script.Task12Fibonacci.php" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.Task12Fibonacci.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task03RectangleArea.php" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Task04TriangleArea.php" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Script.Task01PrintCurrentDate.php" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.Task02VariablesType.php" />
+      <item index="5" class="java.lang.String" itemvalue="PHP Script.Task03RectangleArea.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.Task12Fibonacci.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Task12Fibonacci.php" />
-        <item index="2" class="java.lang.String" itemvalue="PHP Script.Task11NumbersToN.php" />
-        <item index="3" class="java.lang.String" itemvalue="PHP Script.Task10ThirdDigit7.php" />
-        <item index="4" class="java.lang.String" itemvalue="PHP Script.Task09DivideBy2and9.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Task04TriangleArea.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.Task03RectangleArea.php" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.Task01PrintCurrentDate.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Task03RectangleArea.php" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.Task02VariablesType.php" />
       </list>
     </recent_temporary>
   </component>
@@ -234,16 +210,16 @@
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\ttittoIT\GitHub\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
-          <option name="myCopyRoot" value="E:\ttittoIT\GitHub\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
+          <option name="myVcsRoot" value="E:\ttittoIT\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
+          <option name="myCopyRoot" value="E:\ttittoIT\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
         </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\ttittoIT\GitHub\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
-          <option name="myCopyRoot" value="E:\ttittoIT\GitHub\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
+          <option name="myVcsRoot" value="E:\ttittoIT\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
+          <option name="myCopyRoot" value="E:\ttittoIT\PHP\trunk\Softuni\FastTrack\PHPIntroHW" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -254,34 +230,34 @@
       <created>1407054437335</created>
       <updated>1407054437335</updated>
     </task>
-    <task id="LOCAL-00001" summary="task 4-6 solved">
-      <created>1407162702533</created>
-      <updated>1407162702533</updated>
+    <task id="LOCAL-00001" summary="task 4 started">
+      <created>1407156989117</created>
+      <updated>1407156989117</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="754" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25755286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39732888" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32888147" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32888147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327212" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -301,18 +277,12 @@
     </option>
     <MESSAGE value="tasks 1-3 solved" />
     <MESSAGE value="task 4 started" />
-    <MESSAGE value="task 4-6 solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 4-6 solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 4 started" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Task04TriangleArea.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="357" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task01PrintCurrentDate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.09714286" vertical-offset="0" max-vertical-offset="350" />
@@ -330,70 +300,12 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="9" selection-start="500" selection-end="500" vertical-scroll-proportion="0.34731543" vertical-offset="99" max-vertical-offset="17340">
-          <folding />
-        </state>
+        <state line="18" column="9" selection-start="500" selection-end="500" vertical-scroll-proportion="0.34731543" vertical-offset="99" max-vertical-offset="17340" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Task04TriangleArea.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="317" selection-end="317" vertical-scroll-proportion="0.48295453" vertical-offset="0" max-vertical-offset="357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task06QuotesInString.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="97" selection-end="97" vertical-scroll-proportion="0.09714286" vertical-offset="0" max-vertical-offset="350" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task05BooleanVariable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task08PrintHtml.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="77" selection-end="77" vertical-scroll-proportion="0.09659091" vertical-offset="0" max-vertical-offset="352">
-          <folding>
-            <marker date="1407174423741" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task07TypeCasting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="170" selection-end="170" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task09DivideBy2and9.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="84" selection-end="84" vertical-scroll-proportion="0.19428572" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task11NumbersToN.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="145" selection-end="145" vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task10ThirdDigit7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="289" selection-end="289" vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Task12Fibonacci.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="84" selection-end="84" vertical-scroll-proportion="0.19428572" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
+        <state line="4" column="4" selection-start="95" selection-end="95" vertical-scroll-proportion="0.1775457" vertical-offset="0" max-vertical-offset="383" />
       </provider>
     </entry>
   </component>
