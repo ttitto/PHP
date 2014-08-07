@@ -20,6 +20,7 @@ function arr_selection_sort($arr)
         $arr[$min_indx] = $temp;
     }
     print_r($arr);
+    return($arr);
 }
 
 arr_selection_sort(array(2, 3, 4, 1, 50, 2, -3, 4, 5));
