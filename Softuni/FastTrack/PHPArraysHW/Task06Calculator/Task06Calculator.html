@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<form name="frm-calculator" action="Task06Calculator.php" method="get">
+    <div>
+        <label for="first-num">Enter First Number</label>
+        <input type="text" id="first-num"/>
+    </div>
+
+    <div>
+        <label for="operator">Select Operator</label>
+        <select id="operator" value="">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+            <option value="%">%</option>
+        </select>
+    </div>
+    <div>
+        <label for="second-num">Enter Second Number</label>
+        <input type="text" id="second-num"/>
+    </div>
+
+    <input type="submit" id="btn-calculate" value="calculate"/>
+
+    <div>
+        <label for="output">Output =</label>
+
+        <div id="output"></div>
+    </div>
+
+</form>
+
+</body>
+</html>
