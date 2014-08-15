@@ -1,0 +1,5 @@
+html, body, div, span, main, section, table, thead, tbody, tr, td,hr,h1, h2{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
