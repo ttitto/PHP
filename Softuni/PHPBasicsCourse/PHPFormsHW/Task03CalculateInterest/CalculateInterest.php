@@ -28,28 +28,45 @@
 <?php
 function calculate_amount()
 {
-    $period=0;
-    $amount=0;
-    $interest=0;
-    if (isset($_GET['$amount'])) {
-        $amount = $_GET['$amount'];
+    $period = 0;
+    $amount = 0;
+    $interest = 0;
+    if (isset($_GET['amount'])) {
+        $amount = $_GET['amount'];
     }
-    if (isset($_GET['$period'])) {
-        $period =$_GET['$period'];
+    if (isset($_GET['period'])) {
+        $period = intval($_GET['period']);
     }
-    if (isset($_GET['$interest'])) {
-        $interest = $_GET['$interest'];
+    if (isset($_GET['interest'])) {
+        $interest = floatval($_GET['interest']);
     }
-    for($m=1;$m<=$period;$m++){
-        $amount+=($amount*($interest/12)/100)-$amount;
+    for ($m = 1; $m <= $period; $m++) {
+        $amount += ($amount * ($interest / 12) / 100);
     }
-    echo $amount;
     return $amount;
 }
 
-function print_final_amount($value){
-    echo $value;
+function print_final_amount($value)
+{
+    if(isset($_GET['currency'])){
+        $currency=$_GET['currency'];
+        switch($currency){
+            case 'USD':
+                printf("$ %.2f",$value);
+                break;
+            case "EUR":
+                printf("%.2f EURO",$value);
+                break;
+            case "BGN":
+                printf("%.2f лв",$value);
+                break;
+            default: printf("%.2f",$value);
+        }
+    } else{
+        printf("%.2f",$value);
+    }
 }
+
 print_final_amount(calculate_amount());
 ?>
 
