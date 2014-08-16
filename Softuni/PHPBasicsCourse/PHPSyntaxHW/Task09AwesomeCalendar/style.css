@@ -1,5 +1,25 @@
-html, body, div, span, main, section, table, thead, tbody, tr, td,hr,h1, h2{
+html, body, div, span, main, section, table, thead, tbody, tr, td, hr, h1, h2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.month {
+    width: 24%;
+    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+}
+
+thead > tr > th:last-child {
+    color: red;
 }
