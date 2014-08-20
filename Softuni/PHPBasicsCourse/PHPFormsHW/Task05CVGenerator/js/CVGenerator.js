@@ -7,7 +7,7 @@ function addProgLanguage() {
     newInputEl.type = 'text';
     newInputEl.id = 'prog-lang-' + elCount;
 
-    newInputEl.name = 'prog-lang-' + elCount;
+    newInputEl.name = 'prog-lang[]';
     parent.appendChild(newInputEl);
     //create select element
     var oldSelectEl = document.getElementById('prog-lang-level-0');
@@ -16,7 +16,7 @@ function addProgLanguage() {
     var newSelectEl = document.createElement('select');
     newSelectEl.className = 'prog-lang-select';
     newSelectEl.id = 'prog-lang-level-' + elCount;
-    newSelectEl.name = 'prog-lang-level-' + elCount;
+    newSelectEl.name = 'prog-lang-level[]';
     newSelectEl.innerHTML = options;
 
     parent.appendChild(newSelectEl);
@@ -42,7 +42,7 @@ function addLanguage() {
     var newInput=document.createElement('input');
     newInput.type='text';
     newInput.id='lang-'+elCount;
-    newInput.name='lang-'+elCount;
+    newInput.name='lang[]';
     newInput.className='lang-input';
     parent.appendChild(newInput);
 
@@ -50,7 +50,7 @@ function addLanguage() {
     var comprSelect=document.getElementById('lang-compr-0');
     var newComprSelect=document.createElement('select');
     newComprSelect.id='lang-compr-'+elCount;
-    newComprSelect.name='lang-compr-'+elCount;
+    newComprSelect.name='lang-compr[]';
     newComprSelect.innerHTML=comprSelect.innerHTML;
     parent.appendChild(newComprSelect);
 
@@ -58,7 +58,7 @@ function addLanguage() {
     var readSelect=document.getElementById('lang-read-0');
     var newReadSelect=document.createElement('select');
     newReadSelect.id='lang-read-'+elCount;
-    newReadSelect.name='lang-read-'+elCount;
+    newReadSelect.name='lang-read[]';
     newReadSelect.innerHTML=readSelect.innerHTML;
     parent.appendChild(newReadSelect);
 
@@ -66,7 +66,7 @@ function addLanguage() {
     var writeSelect=document.getElementById('lang-write-0');
     var newWriteSelect=document.createElement('select');
     newWriteSelect.id='lang-write-'+elCount;
-    newWriteSelect.name='lang-write-'+elCount;
+    newWriteSelect.name='lang-write[]';
     newWriteSelect.innerHTML=writeSelect.innerHTML;
     parent.appendChild(newWriteSelect);
     parent.appendChild(document.createElement('br'));
