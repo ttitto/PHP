@@ -20,14 +20,10 @@ class Student
 
 class StudentList
 {
-    var $column = '';
-    var $order = '';
     var $students = array();
 
-    public function __construct($column, $order)
+    public function __construct()
     {
-        $this->column = $column;
-        $this->order = $order;
         $this->students = $this->getStudents($_GET['students']);
     }
 
@@ -44,19 +40,101 @@ class StudentList
         }
         return $studentsArr;
     }
-    private   function sort_by_id_asc($a,$b){
+    //Ascending by ID
+    private static   function sort_by_id_asc($a,$b){
         if($a->id==$b->id)return 0;
-        return (($a->id)>($b->id))?-1:1;
+        return (($a->id)<($b->id))?-1:1;
     }
     public  function asc_sort_id(){
-       usort($this->students,'sort_by_id_asc');
+       usort($this->students,'self::sort_by_id_asc');
+    }
+    //Descending by ID
+    private static function sort_by_id_desc($a, $b){
+        if($a->id==$b->id) return 0;
+        return (($a->id)>($b->id))?-1:1;
+    }
+    public function desc_sort_id(){
+        usort($this->students,'self::sort_by_id_desc');
+    }
+    //Ascending by result
+    private static function sort_by_result_asc($a, $b){
+        if(($a->result)===($b->result)){
+            if($a->id==$b->id)return 0;
+            return (($a->id)<($b->id))?-1:1;
+        }else{
+            return (($a->result)<($b->result))?-1:1;
+        }
+    }
+    public function asc_sort_result(){
+        usort($this->students,"self::sort_by_result_asc");
+    }
+    //Descending by result
+    private static function sort_by_result_desc($a, $b){
+        if(($a->result)===($b->result)){
+            if($a->id==$b->id)return 0;
+            return (($a->id)>($b->id))?-1:1;
+        }else{
+            return (($a->result)>($b->result))?-1:1;
+        }
+    }
+    public function desc_sort_result(){
+        usort($this->students,"self::sort_by_result_desc");
+    }
+    //Ascending by username
+    private static function sort_by_username_asc($a, $b){
+        if(($a->username)===($b->username)){
+            if($a->id==$b->id)return 0;
+            return (($a->id)<($b->id))?-1:1;
+        }else{
+            return (($a->username)<($b->username))?-1:1;
+        }
+    }
+    public function asc_sort_username(){
+        usort($this->students,"self::sort_by_username_asc");
+    }
+    //Descending by username
+    private static function sort_by_username_desc($a, $b){
+        if(($a->username)===($b->username)){
+            if($a->id==$b->id)return 0;
+            return (($a->id)>($b->id))?-1:1;
+        }else{
+            return (($a->username)>($b->username))?-1:1;
+        }
+    }
+    public function desc_sort_username(){
+        usort($this->students,"self::sort_by_username_desc");
     }
 
 }
 
-$students = new StudentList($_GET['column'], $_GET['order']);
-$students->asc_sort_id();
-var_dump($students->students);
 
+$studentsList = new StudentList();
+$order=trim($_GET['order']);
+var_dump($order);
+switch(trim($_GET['column'])){
+
+    case 'id':
+        if($order=='ascending'){$studentsList->asc_sort_id();}
+        if($order=='descending'){$studentsList->desc_sort_id();}
+        break;
+    case 'result':
+        if($order=='ascending'){$studentsList->asc_sort_result();}
+        if($order=='descending'){$studentsList->desc_sort_result();}
+        break;
+    case 'username':
+        if($order=='ascending'){$studentsList->asc_sort_username();}
+        if($order=='descending'){$studentsList->desc_sort_username();}
+        break;
+}
+
+//var_dump($studentsList->students);
+$result="<table>";
+foreach ($studentsList->students as $stud) {
+    var_dump($stud);
+    $result.="<tr><td>".$stud->id."</td><td>".$stud->username."</td><td>".$stud->email."</td><td>".$stud->type."</td><td>".$stud->result."</td></tr>";
+}
+$result.="</table>";
+
+echo $result;
 
 ?>
