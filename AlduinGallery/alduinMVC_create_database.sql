@@ -79,12 +79,14 @@ DROP TABLE IF EXISTS `imgalbums`;
 CREATE TABLE `imgalbums` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `CategoryId` int(11) NOT NULL,
+`UserId` int(11) NOT NULL,
   `AlbumName` varchar(100) NOT NULL,
   `IsPublic` tinyint(1) DEFAULT '0',
   `AlbumComment` text,
   PRIMARY KEY (`ID`),
   KEY `FK_Categories_ImgAlbums` (`CategoryId`),
-  CONSTRAINT `FK_Categories_ImgAlbums` FOREIGN KEY (`CategoryId`) REFERENCES `categories` (`ID`)
+  CONSTRAINT `FK_Categories_ImgAlbums` FOREIGN KEY (`CategoryId`) REFERENCES `categories` (`ID`),
+CONSTRAINT `FK_Users_ImgAlbums` FOREIGN KEY (`UserId`) REFERENCES `users` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -94,7 +96,7 @@ CREATE TABLE `imgalbums` (
 
 LOCK TABLES `imgalbums` WRITE;
 /*!40000 ALTER TABLE `imgalbums` DISABLE KEYS */;
-INSERT INTO `imgalbums` VALUES (1,1,'my bold cat',1,'The pictures of my bold cat'),(2,1,'my dog Rex',1,'The pictures of my brave dog Rex, saving a human life'),(3,2,'Pesho`s birthday',1,'The pictures of the drunken friends of Pesho');
+INSERT INTO `imgalbums` VALUES (1,1,2,'my bold cat',1,'The pictures of my bold cat'),(2,1,3,'my dog Rex',1,'The pictures of my brave dog Rex, saving a human life'),(3,2,2,'Pesho`s birthday',1,'The pictures of the drunken friends of Pesho');
 /*!40000 ALTER TABLE `imgalbums` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -120,6 +122,10 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+
+INSERT INTO `gallery`.`users` (`ID`, `UserName`, `Pass`) VALUES ('1', 'pesho', 'ppass');
+INSERT INTO `gallery`.`users` (`ID`, `UserName`, `Pass`) VALUES ('2', 'gosho', 'gpass');
+INSERT INTO `gallery`.`users` (`ID`, `UserName`, `Pass`) VALUES ('3', 'misho', 'mpass');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
