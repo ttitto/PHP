@@ -2,13 +2,19 @@
 define("DX_ROOT_DIR",dirname(__FILE__)."/"); //C:\xampp\htdocs\alduin\
 define("DX_ROOT_PATH",basename(dirname((__FILE__)))."/"); //alduin/
 
-$request=$_SERVER['REQUEST_URI']        ;
+$request=$_SERVER['REQUEST_URI'];
 $request_home="/".DX_ROOT_PATH;
 
 //default controller, method and arguments to use if request doesn't include them
 $controller='master';
 $method='index';
 $params=array();
+
+include_once('config/db.php');
+include_once('controllers/master.php');
+include_once('models/master.php');
+include_once('lib/database.php');
+include_once('lib/authentication.php');
 
 if(!empty($request)){
     if(0===strpos($request,$request_home)){
@@ -26,9 +32,7 @@ if(!empty($request)){
         }
     }
 }
-include_once('config/db.php');
-include_once('lib/database.php');
-include_once('controllers/master.php');
+
 
 $controller_class='\Controllers\\'.ucfirst($controller).'_Controller';
 $instance=new $controller_class();

@@ -1,6 +1,5 @@
 <?php
 namespace Controllers;
-include_once 'master.php';
 
 class Category_Controller extends Master_Controller
 {

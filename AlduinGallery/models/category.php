@@ -1,6 +1,5 @@
 <?php
 namespace Models;
-include_once('master.php');
 
 class Category_Model extends Master_Model
 {

@@ -69,6 +69,37 @@ LOCK TABLES `images` WRITE;
 /*!40000 ALTER TABLE `images` ENABLE KEYS */;
 UNLOCK TABLES;
 
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `UserName` varchar(50) NOT NULL,
+  `Pass` varchar(60) NOT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `UserName` (`UserName`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+
+INSERT INTO `gallery`.`users` (`ID`, `UserName`, `Pass`) VALUES ('1', 'pesho', 'ppass');
+INSERT INTO `gallery`.`users` (`ID`, `UserName`, `Pass`) VALUES ('2', 'gosho', 'gpass');
+INSERT INTO `gallery`.`users` (`ID`, `UserName`, `Pass`) VALUES ('3', 'misho', 'mpass');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
 --
 -- Table structure for table `imgalbums`
 --
@@ -98,35 +129,6 @@ LOCK TABLES `imgalbums` WRITE;
 /*!40000 ALTER TABLE `imgalbums` DISABLE KEYS */;
 INSERT INTO `imgalbums` VALUES (1,1,2,'my bold cat',1,'The pictures of my bold cat'),(2,1,3,'my dog Rex',1,'The pictures of my brave dog Rex, saving a human life'),(3,2,2,'Pesho`s birthday',1,'The pictures of the drunken friends of Pesho');
 /*!40000 ALTER TABLE `imgalbums` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `users`
---
-
-DROP TABLE IF EXISTS `users`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `users` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `UserName` varchar(50) NOT NULL,
-  `Pass` varchar(60) NOT NULL,
-  PRIMARY KEY (`ID`),
-  UNIQUE KEY `UserName` (`UserName`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `users`
---
-
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-
-INSERT INTO `gallery`.`users` (`ID`, `UserName`, `Pass`) VALUES ('1', 'pesho', 'ppass');
-INSERT INTO `gallery`.`users` (`ID`, `UserName`, `Pass`) VALUES ('2', 'gosho', 'gpass');
-INSERT INTO `gallery`.`users` (`ID`, `UserName`, `Pass`) VALUES ('3', 'misho', 'mpass');
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
