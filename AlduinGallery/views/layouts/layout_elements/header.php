@@ -12,7 +12,6 @@
     <header class="page-header">
         <div class="row">
             <div class="col-lg-8">
-                <?php $logged_user = \Lib\Authentication::get_instance()->get_logged_user();?>
                 <nav>
                     <ul class="nav nav-pills pull-left" role="tablist">
                         <li><a href="<?php echo '/' . DX_ROOT_PATH; ?>">Home</a></li>

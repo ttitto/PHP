@@ -11,10 +11,10 @@ $method='index';
 $params=array();
 
 include_once('config/db.php');
-include_once('controllers/master.php');
-include_once('models/master.php');
 include_once('lib/database.php');
 include_once('lib/authentication.php');
+include_once('controllers/master.php');
+include_once('models/master.php');
 
 if(!empty($request)){
     if(0===strpos($request,$request_home)){

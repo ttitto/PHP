@@ -27,8 +27,8 @@ class Authentication
      */
     public static function get_instance()
     {
-        $instance = null;
-        if ($instance === null) {
+        static $instance = null;
+        if ( null===$instance) {
             $instance = new static();
         }
         return $instance;
@@ -39,7 +39,7 @@ class Authentication
      */
     public function is_logged()
     {
-        return $this::$is_logged;
+        return self::$is_logged;
     }
 
     /**Gets the current logged user
@@ -47,7 +47,7 @@ class Authentication
      */
     public function get_logged_user()
     {
-        return $this::$logged_user;
+        return self::$logged_user;
     }
 
     public function login($username, $pass)
@@ -56,7 +56,6 @@ class Authentication
         $db = $db_obj->get_db();
 //TODO: Add password encryption
         $statement = $db->prepare("SELECT * FROM users WHERE UserName= ? AND Pass= ? LIMIT 1");
-        var_dump($statement);
         $statement->bind_param('ss', $username, $pass);
         $statement->execute();
         $result_set = $statement->get_result();
