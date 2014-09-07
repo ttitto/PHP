@@ -39,7 +39,10 @@ class Authentication
      */
     public function is_logged()
     {
-        return self::$is_logged;
+        if(isset($_SESSION['username'])){
+            return true;
+        }
+        return false;
     }
 
     /**Gets the current logged user
@@ -47,14 +50,20 @@ class Authentication
      */
     public function get_logged_user()
     {
-        return self::$logged_user;
+        if(!isset($_SESSION['username'])){
+            return array();
+        }
+        return array(
+            'username'=>$_SESSION['username'],
+            'id'=>$_SESSION['userId']
+        );
     }
 
     public function login($username, $pass)
     {
         $db_obj = Database::get_instance();
         $db = $db_obj->get_db();
-//TODO: Add password encryption
+        //TODO: Add password encryption
         $statement = $db->prepare("SELECT * FROM users WHERE UserName= ? AND Pass= ? LIMIT 1");
         $statement->bind_param('ss', $username, $pass);
         $statement->execute();
@@ -66,8 +75,10 @@ class Authentication
             return true;
         }
         return false;
+    }
 
-
+    public function logout(){
+        session_destroy();
     }
 
 }

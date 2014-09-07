@@ -12,6 +12,9 @@
     <header class="page-header">
         <div class="row">
             <div class="col-lg-8">
+                <?php if(!empty($logged_user)):
+                  echo "<span id=\"usertab\">Hello, ".$logged_user['username']."!</span>";
+                endif;?>
                 <nav>
                     <ul class="nav nav-pills pull-left" role="tablist">
                         <li><a href="<?php echo '/' . DX_ROOT_PATH; ?>">Home</a></li>
@@ -21,6 +24,9 @@
                         <?php if (empty($logged_user)): ?>
                             <li><a href="<?php echo '/' . DX_ROOT_PATH . "login/index"; ?>">Login</a></li>
                             <li><a href="#">Register</a></li>
+                        <?php endif; ?>
+                        <?php if(!empty($logged_user)): ?>
+                            <li><a href="#">Log out</a></li>
                         <?php endif; ?>
 
                     </ul>

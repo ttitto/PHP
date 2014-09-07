@@ -13,16 +13,18 @@ class Login_Controller extends Master_Controller
 
     public function index()
     {
-//$logged_user = \Lib\Authentication::get_instance()->get_logged_user();
         $auth = \Lib\Authentication::get_instance();
-        var_dump($_POST);
         if (!empty($_POST['username']) && !empty($_POST['pass'])) {
             $username = $_POST['username'];
             $pass = $_POST['pass'];
 
             $is_logged = $auth->login($username, $pass);
+            $logged_user=$auth->get_logged_user();
+            $this->logged_user=$logged_user;
             var_dump($is_logged);
+            var_dump($logged_user);
         }
+        var_dump($_SESSION);
         $template_name = DX_ROOT_DIR . $this->views_dir . 'index.php';
         include_once($this->layout);
     }

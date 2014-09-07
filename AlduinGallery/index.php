@@ -1,4 +1,5 @@
 <?php
+
 define("DX_ROOT_DIR",dirname(__FILE__)."/"); //C:\xampp\htdocs\alduin\
 define("DX_ROOT_PATH",basename(dirname((__FILE__)))."/"); //alduin/
 
@@ -9,6 +10,7 @@ $request_home="/".DX_ROOT_PATH;
 $controller='master';
 $method='index';
 $params=array();
+$user_routing=false;
 
 include_once('config/db.php');
 include_once('lib/database.php');
@@ -20,21 +22,29 @@ if(!empty($request)){
     if(0===strpos($request,$request_home)){
         $request= substr($request,strlen($request_home));
 
+        if(0===strpos($request, 'user/')){
+            $request=substr($request,strlen('user/'));
+            $user_routing=true;
+            include_once('controllers/user/master.php');
+        }
+        var_dump($request);
+
         $components=explode("/",$request,3);
         //assign controller and method from URI
         if(1<count($components)){
             list($controller, $method)=$components;
         }
         //include the controller's php file
-        include_once ('controllers/'.$controller.'.php');
+        $user_folder=$user_routing?"user/":"";
+        include_once ('controllers/'.$user_folder.$controller.'.php');
         if(isset($components[2])){
             $params=$components[2];
         }
     }
 }
 
-
-$controller_class='\Controllers\\'.ucfirst($controller).'_Controller';
+$user_namespace=$user_routing?"\\User":"";
+$controller_class= $user_namespace.'\Controllers\\'.ucfirst($controller).'_Controller';
 $instance=new $controller_class();
 
 if(method_exists($instance,$method)){

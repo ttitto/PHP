@@ -7,7 +7,7 @@ class Master_Controller
     protected $views_dir;
     protected $class_name;
     protected $model;
-    protected $logged_user;
+    protected $logged_user=array();
     public function __construct($class_name='\Controllers\Master_Controller',
                                 $views_dir='/views/master/',
                                 $model='master')
