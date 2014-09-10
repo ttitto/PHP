@@ -1,0 +1,47 @@
+Validating input
+
+	1. Determine which data, what format and what values are allowed
+	2. Take only expected parameters from the $_GET array (whitelisting approach):
+	
+function allowed_get_params( $allowed_params=[]){
+	$allowed_array=[];
+	foreach($allowed_params as $param){
+		if(isset($_GET[$param])){
+			$allowed_array[$param]=$_GET[$param];
+		} else{
+			$allowed_array[$param]=NULL;
+		}	
+	}
+	return $allowed_array;
+}
+$get_params=allowed_get_params(['username','password']);
+
+	3. Take only expected length, type, format, values in/out of a predefined set
+
+Sanitize data through escaping or encoding characters
+
+	1. Prefer php included functions instead of custom: 
+		a. htmlspecialchars(), htmlentities(), striptags()
+		b. urlencode()
+		c. json_encode()
+		d. mysqli_real_escape_string(), addslashes()
+	2. Use filter_var function with predefined filters
+	3. Give names to the variables, that give information about the sanitization state
+			examples: 	$htmlsafe_email =htmlspecialchars($email),
+						$dbsafe_email =addslashes($email),
+						$jsonsafe_email=jsonencode($email)
+						$dirty=[], $clean=[];$dirty['email']=$email; $clean['email']=htmlentities($dirty['email']);
+						
+Keep data as private as possible
+	1. Divide projects code into public and private area and configure the web server's root directory to be the public directory (Apache: DocumentRoot, Nginx:root)
+		a. public area - only presentation code, calls to functions from the private area
+	2. Credentials data
+		a. keep in encoded state in a separate file
+		b. exclude from source control systems
+	3. End all filenames with ".php" so that the server never shows their content
+	4. Keep an index.php file in every directory. It prevents its content to be shown
+	5. Smart logging
+		a. Errors
+		b. Sensitive actions
+		c. Possible attacks
+		

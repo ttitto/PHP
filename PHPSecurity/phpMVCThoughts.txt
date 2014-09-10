@@ -1,0 +1,47 @@
+Example from Udemy tutorial
+mvc
+	app
+		core (acts as a Library folder of external classes)
+			App.php (handles routing)
+			Controller.php (handles models and views, processes the current request 		and loads the necessary view)
+		controllers
+		models
+		views
+		.htaccess (Options -Indexes)
+		init.php (includes the Application class and the Controller classes, sets any configurations)
+	public
+		css
+		js
+		fonts
+		.htaccess (Rewrite mode)
+		index.php (includes an init file and instantiate the application)
+		
+		
+Assimilated own structure
+
+mvc
+	app
+		core
+			App.php (handles routing)
+		controllers
+			Controller.php (base class controller, handles models and views, processes the current request having the requested model, view and params from the routing system (App.php))
+			
+			user (subfolder containing the controllers that request that a user has been logged in)
+		models
+			Model.php (base model class)
+			user (subfolder containing logged user models)
+		views
+			layouts
+				elements
+			user
+				layouts
+					elements
+		.htaccess (Options -Indexes)
+		init.php (includes initializaton data - App.php, base controller, database class, sets any configurations)
+	
+	public
+		css
+		js
+		fonts
+		.htaccess (rewrite mode settings)
+		index.php (includes the init.php file and instantiate the application)
