@@ -45,3 +45,175 @@ Keep data as private as possible
 		b. Sensitive actions
 		c. Possible attacks
 		
+XSS - Cross-Site Scripting
+	1. Sanitize any dynamic data that gets output to the browser
+	
+CSRF - Cross-Site Request Forgery
+	1. Always use ONLY POST requests when data should be changed on the server. Check request method before executing something that changes data: $_SERVER['REQUEST_METHOD']==='POST'
+	2. Store a form token and its generation time in the session, insert the token as a hidden field in the form and compare them when you get data from this same form, ex:
+			function create_csrf_token(){
+				$token=md5(uniqueid(rand(),TRUE));
+				$_SESSION['csrf_token']=$token;
+				$_SESSION['csrf_token_time']=time();
+				return $token;
+			}
+			
+SQL INJECTION
+	1. Limit the user privileges on the database
+	2. Sanitize input for SQL with mysqli_real_escape_string() AND addslashes() when there is no database connection available
+	3. Use prepared statements
+	
+URL MANIPULATION
+	1. Take private data under authentication
+	2. Use only post requests to change data
+	 
+FAKED REQUESTS
+	1. Never trust data from request headers
+	
+FAKED FORMS
+	1. DO NOT rely on form structure and client side validation
+	2. USE HTTP referer to check if the form is from the same domain, but have in mind that requests' headers can be faked
+			function is_from_same_domain(){
+				if(!isset($_SERVER['HTTP_REFERER'])){
+					return false;
+				} else{
+					$referer_host=parse_url($_SERVER['HTTP_REFERER'],PHP_URL_HOST);
+					$server_host=$_SERVER['HTTP_HOST'];
+					return $referer_host==$server_host?true:false;
+				}
+			}
+			
+COOKIES - can be observed on the network traffic and accessed by javascript
+	1. Put only non sensitive data in cookies
+	2. Set cookies expiration time
+	3. set cookies domain and path
+	4. use secure cookies - HTTPS only - that can not be accessed by javascript
+		setcookie(name, value, expire, path, domain, secure, httponly);
+	5. Encrypt cookies - Mcrypt extension
+		1. salt value is hardcoded in the application
+		
+				function encrypt_string($salt, $string) {
+					// Configuration (must match decryption)
+					$cipher_type = MCRYPT_RIJNDAEL_256;
+					$cipher_mode = MCRYPT_MODE_CBC;
+					
+					// Using initialization vector adds more security
+					$iv_size = mcrypt_get_iv_size($cipher_type, $cipher_mode);
+					$iv =  mcrypt_create_iv($iv_size, MCRYPT_RAND);
+
+					$encrypted_string = mcrypt_encrypt($cipher_type, $salt, $string, $cipher_mode, $iv);
+					
+					// Return initialization vector + encrypted string
+					// We'll need the $iv when decoding.
+					return $iv . $encrypted_string;
+				}
+
+				function decrypt_string($salt, $iv_with_string) {
+					// Configuration (must match encryption)
+					$cipher_type = MCRYPT_RIJNDAEL_256;
+					$cipher_mode = MCRYPT_MODE_CBC;
+					
+					// Extract the initialization vector from the encrypted string.
+					// The $iv comes before encrypted string and has fixed size.
+					$iv_size = mcrypt_get_iv_size($cipher_type, $cipher_mode);
+					$iv = substr($iv_with_string, 0, $iv_size);
+					$encrypted_string = substr($iv_with_string, $iv_size);
+					
+					$string = mcrypt_decrypt($cipher_type, $salt, $encrypted_string, $cipher_mode, $iv);
+					return $string;
+				}
+
+				// Encode after encryption to ensure encrypted characters are savable
+				function encrypt_string_and_encode($salt, $string) {
+					return base64_encode(encrypt_string($salt, $string));
+				}
+
+				// Decode before decryption
+				function decrypt_string_and_decode($salt, $string) {
+					return decrypt_string($salt, base64_decode($string));
+				}
+	6. Sign cookies
+		1. Encrypt cookies and check if they are the same after decrypting when they are used
+				function sign_string($string) {
+					// Using $salt makes it hard to guess how $checksum is generated
+					// Caution: changing salt will invalidate all signed strings
+					$salt = "Simple salt";
+					$checksum = sha1($string.$salt); // Any hash algorithm would work
+					// return the string with the checksum at the end
+					return $string.'--'.$checksum;
+				}
+
+				function signed_string_is_valid($signed_string) {
+					$array = explode('--', $signed_string);
+					
+					if(count($array) != 2) {
+						// string is malformed or not signed
+						return false;
+					}
+					
+					// Sign the string portion again. Should create same 
+					// checksum and therefore the same signed string.
+					$new_signed_string = sign_string($array[0]);
+					if($new_signed_string == $signed_string) {
+						return true;
+					} else {
+						return false;
+					}
+				}
+
+SESSION
+	1. SESSION HIJACKING - a hacker alters data in your session and
+	   SESSION fixation - a hacker sets you a session
+		a. Do not accept session identifiers from GET or POST variables
+		b. use httpOnly cookies to store session data
+		c. use SSL - pages, that are under authentication,  are enrypted when they are sent back or forward to the browser
+		d. use secure cookies
+		
+		set folowing variables in the php.ini file:
+			 session.cookie_lifetime = 0			**cookie lifetime is until browser is closed
+			 session.cookie_secure = 1				**use SSL
+			 session.cookie_httponly = 1			**Prevents XSS theft by blocking JS access to cookies
+			 session.use_only_cookies = 1			**ID can not come from GET or POST
+			 session.entropy_file = "/dev/urandom"	**IDs are more random
+		
+		session_set_cookie_params(expire, path, domain, secure, httponly); - must be set before session start
+		
+			Create function to handle activity after successful login, logout and before loading every protected page having in mind the following
+		e. Regenerate session identifier periodically, at key points: after log in
+			session_regenerate_id();
+		f. Expire and remove old Session files regularly and keep track of last activity in sessions
+			--use session_unset() and session_destroy();
+			--check if last login is recent by comparing a variable holding the last login time with the elapsed allowed time and the current time
+		g. save user agent string in session and confirm it
+			$_SESSION['$set_user_agent']===$_SERVER['HTTP_USER_AGENT']; 
+		h. check IP address
+			$_SESSION['$set_ip']===$_SERVER['REMOTE_ADDR']
+			
+REMOTE SYSTEM EXECUTION
+	1. Do not use system command functions like: exec, passthru, popen, proc_open, shell_exec, `, system
+	2. If you must use them then sanitize them or their arguments: escapeshellcmd(string) and escapeshellarg(string)
+	
+PHP CODE INJECTION
+	1. Avoid using of eval() function
+	2. Remote file inclusion - avoid using dynamic data with include or require
+	3. use escapeshellcmd () or escapeshellarg() for the strings passed to eval or include or require in case their use can not be avoided
+	4. set disable_functions in the php.ini file
+	5. set an array with the allowed templates to be included  and check if the included string is present in this whitelisting array
+	6. use self function to validate or sanitize the string to be passed to eval or include, ex. with preg replace
+	
+FILE UPLOAD
+	1. Require user authentication, no anonymous uploads
+	2. Do not host uploaded files that are not verified
+	3. Use caution when opening uploaded files
+	4. Limit the allowed file size and format
+	5. Change the settings in the php.ini file:
+			file_uploads=true;
+			upload_tmp_dir="/www/tmp";
+			upload_max_filesize="2M";
+			max_file_uploads=20 // count of simultaneous uploads
+			post_max_size = "10M"
+	6. The file should be uploaded only by POST request
+	7. Always sanitize file name of the uploaded file or give your own name
+	8. When moving file from the temporary directory, be sure that another file with the same name is not present
+	9. Location of permanent storing of the file should not be public
+	
