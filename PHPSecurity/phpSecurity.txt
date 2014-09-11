@@ -215,5 +215,17 @@ FILE UPLOAD
 	6. The file should be uploaded only by POST request
 	7. Always sanitize file name of the uploaded file or give your own name
 	8. When moving file from the temporary directory, be sure that another file with the same name is not present
-	9. Location of permanent storing of the file should not be public
+	9. Location of permanent storing of the file should not be public (when possible)
+FILE PERMISSIONS
+	1. Set read(4), write(6) and execute(1) permissions to files. Remove execute permissions for uploaded files.
+		fileperms(), chmod()
+FILE SIZE RESTRICTIONS
+	1. php.ini - upload_max_filesize //the total upload size
+	2. HTML form attribute: MAX_FILE_SIZE
+	3. filesize()
 	
+FILE TYPES
+	1.Check MIME Type ('image/png', 'text/plain',....)
+	2. Check file extension ('png', 'txt') - pathinfo()
+	3. Check dimensions for image files -  getimagesize()
+	4. Inspect file content - file_get_content()
