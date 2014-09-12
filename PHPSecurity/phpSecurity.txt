@@ -229,3 +229,23 @@ FILE TYPES
 	2. Check file extension ('png', 'txt') - pathinfo()
 	3. Check dimensions for image files -  getimagesize()
 	4. Inspect file content - file_get_content()
+	
+USER AUTHENTICATION
+	1. DO NOT store passwords in plain texts
+	2. DO NOT store encrypted passwords that can be decrypted
+	3. USE one-way encryption, and compare the attempted and encrypted input with the encrypted value in the database
+	4. Use a salt string
+	5. Use new functions from PHP 5.5 or install them as a library for lower PHP versions: 
+		password_hash($password, PASSWORD_BCRYPT);
+		password_verify($password, $existing_hash);
+	6. Require the users to have secure passwords for their accounts
+		a. long passwords
+		b. non-alphanumeric characters
+		c. confirm password when registering
+BRUTE FORCE ATTACKS
+	a. strong passwords
+	b. slow password-hashing algorithms
+	c. Logging of suspicious behaviour
+	d. throttling when some unsuccessful login atempts are done
+	e. blacklist IP addresses
+			most reliable address to use: $_SERVER['REMOTE_ADDR']
