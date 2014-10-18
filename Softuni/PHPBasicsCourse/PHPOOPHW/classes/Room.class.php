@@ -1,6 +1,6 @@
 <?php
 
-namespace Classes;
+namespace classes;
 
 abstract class Room implements iReservable
 {
@@ -33,19 +33,21 @@ abstract class Room implements iReservable
         $this->setRoomNumber($roomNumber);
     }
 
+    private function setReservations($reservations)
+    {
+        $this->reservations = $reservations;
+    }
+
     function addReservation($reservation)
     {
-        $this->getReservations()[] = $reservation;
+        $arr = $this->getReservations();
+        $arr[] = $reservation;
+        $this->setReservations($arr);
     }
 
     public function getReservations()
     {
         return $this->reservations;
-    }
-
-    public function setReservations($reservations)
-    {
-        $this->reservations = $reservations;
     }
 
     function removeReservation($reservation)
@@ -56,14 +58,14 @@ abstract class Room implements iReservable
     function __toString()
     {
         $roomStr = get_class($this) .
-        ": Room number: " . $this->getRoomNumber() .
-        " type: " . $this->getRoomType() .
-        " Beds: " . $this->getBedCount() .
-        " has balcony: " . $this->getHasBalcony() ? "yes" : "no" .
-        " has restroom:  " . $this->getHasRestroom() ? "yes" : "no" .
-        " extras: [" . implode(', ', $this->getExtras()) . "]" .
-        " Price: " . $this->getPrice() .
-        "\nReservations:\n" . implode('\n', $this->getReservations());
+            ": Room number: " . $this->getRoomNumber() .
+            " type: " . $this->getRoomType() .
+            " Beds: " . $this->getBedCount() .
+            " has balcony: " . ($this->getHasBalcony() ? "yes" : "no") .
+            " has restroom:  " . ($this->getHasRestroom() ? "yes" : "no") .
+            " extras: [" . implode(', ', $this->getExtras()) . "]" .
+            " Price: " . $this->getPrice() .
+            "<br>Reservations:<br>" . implode('', $this->getReservations());
 
         return $roomStr;
     }

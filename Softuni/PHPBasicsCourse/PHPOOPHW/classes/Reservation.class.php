@@ -9,14 +9,16 @@ class Reservation
 
     function __construct($startDate, $endDate, Guest $guest)
     {
-        $this->startDate = $startDate;
-        $this->endDate = $endDate;
-        $this->guest = $guest;
+        $this->setStartDate($startDate);
+        $this->setEndDate($endDate);
+        $this->setGuest($guest);
     }
 
     function __toString()
     {
-        return "Reservation:" . $this->getStartDate() . " to " . $this->getEndDate() . ", Guest: " . $this->getGuest() . toString() . "\"";
+        return "Reservation:" . date("d.m.Y", $this->getStartDate()) . " to " . date("d.m.Y",
+            $this->getEndDate()) . ",
+        Guest: " . $this->getGuest() . "<br>";
     }
 
     public function getStartDate()
@@ -44,7 +46,7 @@ class Reservation
         return $this->guest;
     }
 
-    public function setGuest($guest)
+    public function setGuest(Guest $guest)
     {
         $this->guest = $guest;
     }

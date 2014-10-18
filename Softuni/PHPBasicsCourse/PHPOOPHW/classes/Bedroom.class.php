@@ -1,6 +1,8 @@
 <?php
 namespace classes;
-class Bedroom extends Room{
+
+class Bedroom extends Room
+{
     function __construct(
         $roomNumber,
         $price,

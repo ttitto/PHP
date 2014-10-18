@@ -10,9 +10,9 @@ class Guest
 
     function __construct($firstName, $lastName, $id)
     {
-        $this->getFirstName($firstName);
-        $this->getId($id);
-        $this->getLastName($lastName);
+        $this->setFirstName($firstName);
+        $this->setId($id);
+        $this->setLastName($lastName);
     }
 
     public function getFirstName()
@@ -47,6 +47,7 @@ class Guest
 
     function __toString()
     {
-        return "Guest: " . $this->getId() . ": " . $this->getFirstName() . " " . $this->getLastName();
+        $str= ("Guest: " . $this->getId() . ": " . $this->getFirstName() . " " . $this->getLastName());
+        return $str;
     }
 }

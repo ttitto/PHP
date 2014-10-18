@@ -1,7 +1,7 @@
 <?php
 namespace classes;
 
-class Apartment
+class Apartment extends Room
 {
     function __construct(
         $roomNumber,
